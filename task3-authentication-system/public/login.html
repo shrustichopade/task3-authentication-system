@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SecureAuth | Login</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/auth.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="/">SecureAuth</a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="form-wrap">
+        <form class="card form-card" id="loginForm">
+            <p class="eyebrow">WELCOME BACK</p>
+
+            <h1>Log in</h1>
+
+            <p class="muted">
+                Use your username or email address.
+            </p>
+
+            <label for="identity">Username or email</label>
+
+            <input
+                id="identity"
+                name="identity"
+                type="text"
+                autocomplete="username"
+                required
+                placeholder="Username or email"
+            >
+
+            <label for="password">Password</label>
+
+            <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                required
+                maxlength="72"
+                placeholder="Your password"
+            >
+
+            <button class="button full-width" type="submit">
+                Login
+            </button>
+
+            <p id="formMessage" class="message" role="status"></p>
+
+            <p class="form-foot">
+                New here?
+                <a href="/register.html">Create an account</a>
+            </p>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SecureAuth | Register</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/auth.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="/">SecureAuth</a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/login.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="form-wrap">
+        <form class="card form-card" id="registerForm">
+            <p class="eyebrow">GET STARTED</p>
+
+            <h1>Create your account</h1>
+
+            <p class="muted">
+                Fill in the details below to register.
+            </p>
+
+            <label for="email">Email address</label>
+
+            <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                maxlength="255"
+                placeholder="you@example.com"
+            >
+
+            <label for="username">Username</label>
+
+            <input
+                id="username"
+                name="username"
+                type="text"
+                autocomplete="username"
+                required
+                minlength="3"
+                maxlength="50"
+                pattern="[A-Za-z0-9_.-]+"
+                placeholder="your_username"
+            >
+
+            <small>
+                Use 3–50 letters, numbers, dots, underscores, or hyphens.
+            </small>
+
+            <label for="password">Password</label>
+
+            <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="new-password"
+                required
+                minlength="8"
+                maxlength="72"
+                placeholder="At least 8 characters"
+            >
+
+            <button class="button full-width" type="submit">
+                Register
+            </button>
+
+            <p id="formMessage" class="message" role="status"></p>
+
+            <p class="form-foot">
+                Already have an account?
+                <a href="/login.html">Log in</a>
+            </p>
+        </form>
+    </main>
+</body>
+</html>

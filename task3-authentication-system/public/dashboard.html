@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SecureAuth | Dashboard</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/dashboard.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="/">SecureAuth</a>
+
+        <nav>
+            <a href="/">Home</a>
+
+            <button
+                id="logoutButton"
+                class="nav-button"
+                type="button"
+            >
+                Logout
+            </button>
+        </nav>
+    </header>
+
+    <main class="form-wrap">
+        <section class="card dashboard-card">
+            <p class="eyebrow">PRIVATE AREA</p>
+
+            <h1>Welcome to your dashboard</h1>
+
+            <p id="dashboardMessage" class="muted">
+                Checking your session…
+            </p>
+
+            <div id="userDetails" class="user-details" hidden>
+                <p>
+                    <strong>Username:</strong>
+                    <span id="username"></span>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="email"></span>
+                </p>
+
+                <p>
+                    <strong>User ID:</strong>
+                    <span id="userId"></span>
+                </p>
+            </div>
+
+            <p id="dashboardError" class="message" role="status"></p>
+
+            <a class="button button-secondary" href="/">
+                Back to Home
+            </a>
+        </section>
+    </main>
+</body>
+</html>
